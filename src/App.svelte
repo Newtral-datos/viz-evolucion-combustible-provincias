@@ -13,7 +13,7 @@
 
   let fuel     = 'gasoleo';
   let selected = null;
-  let sortCol  = 'pct';   // 'name' | 'last' | 'abs' | 'pct'
+  let sortCol  = 'abs';   // 'name' | 'last' | 'abs' | 'pct'
   let sortDir  = -1;      // -1 desc, +1 asc
 
   function toggleSort(col) {
@@ -77,8 +77,8 @@
 
   <header>
     <div class="brand-block">
-      <span class="brand">Subida del precio · España</span>
-      <span class="subtitle">Ordenado por evolución (%) · Haz clic en la columna para cambiar</span>
+      <span class="brand">Evolución del precio del combustible en España</span>
+      <span class="subtitle">Ordenado por subida en euros · Haz clic en la columna para cambiar</span>
     </div>
     <div class="fuel-toggle">
       <button class:active={fuel==='gasoleo'}  on:click={() => { fuel='gasoleo';  selected=null }}>Gasóleo A</button>
